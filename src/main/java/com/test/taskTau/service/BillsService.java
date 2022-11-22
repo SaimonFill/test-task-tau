@@ -22,7 +22,7 @@ public class BillsService {
             }
         }
         if (diff.compareTo(BigDecimal.ZERO) > 0) {
-            throw new NoMoreCoinsException(diff);
+            throw new NoMoreCoinsException();
         }
         return coinsCount;
     }
